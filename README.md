@@ -1,10 +1,12 @@
 # Nexmo
 
-**TODO: Add description**
+Nexmo REST API client for Elixir.
+
+**Warning:** This is still very much a work in progress.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+The package can be installed as:
 
   1. Add `nexmo` to your list of dependencies in `mix.exs`:
 
@@ -22,3 +24,15 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
     end
     ```
 
+## Usage
+
+### Account Balance
+
+```elixir
+iex(1)> Nexmo.Account.balance
+[autoReload: false, value: 15.1874]
+```
+
+## License
+
+This library is released under the [MIT License](LICENSE).
