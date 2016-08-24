@@ -6,8 +6,6 @@ defmodule Nexmo.Mixfile do
      version: "0.2.0",
      description: description(),
      elixir: "~> 1.3",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
      deps: deps(),
      package: package()]
   end
@@ -32,7 +30,10 @@ defmodule Nexmo.Mixfile do
 
   defp package do
     [
-      licenses: ["MIT"]
+      name: :nexmo,
+      licenses: ["MIT"],
+      maintainers: ["Cristiano Betta"],
+      links: %{"GitHub" => "https://github.com/cbetta/nexmo-elixir"}
     ]
   end
 end
